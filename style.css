@@ -1,1 +1,30 @@
-body{background: black;}
+body {
+    background: black;
+    color: white;
+}
+
+.titulo-cafe {
+    color: #6f4e37; 
+}
+
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 240px; 
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255,255,255,0.1) !important;
+    cursor: pointer;
+}
+
+.card-hover img {
+    height: 180px;
+    object-fit: cover;
+}
+.card-hover .btn {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+}
