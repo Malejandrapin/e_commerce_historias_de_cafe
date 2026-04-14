@@ -62,39 +62,34 @@ footer {
 }
 
 
-.btn i {
-    margin-right: 5px;
+/* Estilo base para los iconos sociales */
+.social-icon {
+    font-size: 1.5rem; /* Tamaño del icono */
+    color: #4b3621;    /* Un tono café oscuro para que combine con tu paleta */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
 }
 
-.btn:hover i {
-    transform: scale(1.2);
-    transition: 0.3s;
+/* Efecto hover general (se agranda un poco) */
+.social-icon:hover {
+    transform: translateY(-3px) scale(1.1);
 }
 
-.btn-linkedin {
-    background-color: #0077b5;
-    color: white;
-    border: none;
-}
-.btn-linkedin:hover {
-    background-color: #005582;
-    color: white;
+/* Colores específicos solo cuando pasas el mouse (opcional) */
+.icon-linkedin:hover {
+    color: #0077b5;
 }
 
-.btn-github {
-    background-color: #24292e;
-    color: white;
-    border: none;
-}
-.btn-github:hover {
-    background-color: #444d56;
-    color: white;
+.icon-github:hover {
+    color: #24292e;
 }
 
-
-.btn-portfolio {
-    background-color: #28a745;
-    color: white;
-    border: none;
+.icon-portfolio:hover {
+    color: #28a745;
 }
 
+/* Ajuste para que el contenedor no tenga el padding de los botones antiguos */
+.card-body .d-flex {
+    padding-bottom: 15px;
+}
