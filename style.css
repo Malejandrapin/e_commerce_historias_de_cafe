@@ -2,14 +2,28 @@ body {
     background-color: #b08D57;
 }
 
-.hero-section {
-    height: 60vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                url('https://www.elespectador.com/resizer/v2/X5QYSWJX4FGE3GUXLCYZTPQHRI.jpeg?auth=23698a37327a73897389d61d832b9d0e9d426d77622535936d297588fa300e28&width=920&height=613&smart=true&quality=60'); 
-    background-size: cover;
-    background-position: center;
+
+.custom-carousel .carousel-item {
+  height: 500px; 
+  background-color: #000; 
 }
 
+.custom-carousel img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+  object-position: center;
+  opacity: 0.8; /
+}
+
+
+.carousel-caption {
+  background: rgba(103 93 93 / 40%); 
+  backdrop-filter: blur(5px); 
+  border-radius: 15px;
+  padding: 20px;
+  bottom: 10%;
+}
 .titulo-cafe {
     color: #6f4e37;
     font-weight: bold;
