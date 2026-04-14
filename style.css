@@ -32,8 +32,9 @@ body {
 }
 
 .card-hover {
-    transition: all 0.3s ease;
+    transition: 2s;
     background: #b0a799;
+    transform: rotateY(360deg);
 }
 
 .card-hover:hover {
@@ -42,15 +43,23 @@ body {
 }
 
 .card-img-top {
-
-    width: 140px; 
-    height: 140px;
-    margin: 25px auto 10px auto; 
-    border-radius: 50%; 
+    /* 1. Tamaño un poco más discreto */
+    width: 120px; 
+    height: 120px;
+    margin: 20px auto 10px auto; 
+    border-radius: 12px; 
     object-fit: cover;
     object-position: 50% 15%;
-    border: 3px solid #6f4e37;
-    padding: 3px;
+    border: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); 
+    filter: grayscale(20%) contrast(105%); 
+    transition: all 0.4s ease;
+}
+
+
+.card-hover:hover .card-img-top {
+    filter: grayscale(0%);
+    transform: scale(1.05);
 }
 
 .card-body {
@@ -62,22 +71,18 @@ footer {
     background-color: #2b1d12;
 }
 
-
-/* Estilo base para los iconos sociales */
 .social-icon {
-    font-size: 1.5rem; /* Tamaño del icono */
-    color: #4b3621;    /* Un tono café oscuro para que combine con tu paleta */
+    font-size: 1.5rem; 
+    color: #4b3621; 
     text-decoration: none;
     transition: all 0.3s ease;
     display: inline-block;
 }
 
-/* Efecto hover general (se agranda un poco) */
 .social-icon:hover {
     transform: translateY(-3px) scale(1.1);
 }
 
-/* Colores específicos solo cuando pasas el mouse (opcional) */
 .icon-linkedin:hover {
     color: #0077b5;
 }
@@ -90,7 +95,6 @@ footer {
     color: #28a745;
 }
 
-/* Ajuste para que el contenedor no tenga el padding de los botones antiguos */
 .card-body .d-flex {
     padding-bottom: 15px;
 }
