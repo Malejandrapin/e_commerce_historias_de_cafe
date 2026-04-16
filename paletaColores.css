@@ -1,4 +1,4 @@
-root {
+:root {
   /* Paleta de Colores (Basada en Herencia y Tierra) */
   --color-primary: #532721;           /* Marrón oscuro (Principal) */
   --color-primary-active: #3d1c18;    /* Versión más oscura para hover */
