@@ -1,0 +1,107 @@
+
+@import url('https://googleapis.com');
+@import url("paletaColores.css");
+
+body{
+    background: url('./img/background1.jpg') center/cover;
+    background-attachment: fixed; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.custom-carousel .carousel-item {
+  height: 500px; 
+  background-color: #000; 
+}
+
+.custom-carousel img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+  object-position: center;
+  opacity: 0.8; /
+}
+
+
+.carousel-caption {
+  background: rgba(103 93 93 / 40%); 
+  backdrop-filter: blur(5px); 
+  border-radius: 15px;
+  padding: 20px;
+  bottom: 10%;
+}
+.titulo-cafe {
+    color: #6f4e37;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+
+.card-hover {
+    transition: 2s;
+    background: rgba(95, 99, 53, 0.15);
+    transform: rotateY(360deg);
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+.card-img-top {
+    width: 120px; 
+    height: 120px;
+    margin: 20px auto 10px auto; 
+    border-radius: 12px; 
+    object-fit: cover;
+    object-position: 50% 15%;
+    border: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); 
+    filter: grayscale(20%) contrast(105%); 
+    transition: all 0.4s ease;
+}
+
+
+.card-hover:hover .card-img-top {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding-top: 5px;
+    text-align: center;
+}
+
+footer {
+    background-color: #2b1d12;
+}
+
+.social-icon {
+    font-size: 1.5rem; 
+    color: #4b3621; 
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px) scale(1.1);
+}
+
+.icon-linkedin:hover {
+    color: #0077b5;
+}
+
+.icon-github:hover {
+    color: #24292e;
+}
+
+.icon-portfolio:hover {
+    color: #28a745;
+}
+
+.card-body .d-flex {
+    padding-bottom: 15px;
+}
