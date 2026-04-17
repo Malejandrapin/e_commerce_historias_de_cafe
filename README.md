@@ -7,7 +7,7 @@ Plataforma de e-commerce que conecta directamente a familias caficultoras colomb
 | Nombre |
 |--------|
 | Andrés Oswaldo Díaz Figueroa |
-| Angie Valeria Beltrán Reyes |
+| Marcia Baquero Ruiz |
 | Didier Alexis Cuan Najas |
 | Maira Alejandra Pinilla Pinilla |
 | Zully Tamayo Martínez |
